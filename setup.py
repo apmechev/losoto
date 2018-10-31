@@ -35,6 +35,10 @@ setup(
     description=description,
     long_description=long_description,
     platforms='any',
+    include_package_data=True,
+    data_files=[("losoto/examples",
+                ["examples/example.h5"])
+               ],
     classifiers = [
         'Programming Language :: Python',
         'Development Status :: Stable',
